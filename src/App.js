@@ -2,15 +2,19 @@ import React from 'react';
 import './App.css';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
-import { DatePicker } from 'antd';
+import Header from './components/Header';
+
 function App() {
   return (
     <div className="app">
       <Sidebar />
-      <MainContent />
-      <DatePicker />
+      <div className="main-area">
+        <Header />
+        <MainContent />
+      </div>
     </div>
   );
 }
 
 export default App;
+

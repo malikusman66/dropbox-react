@@ -1,28 +1,27 @@
 import React from 'react';
 import './MainContent.css';
 
-function MainContent() {
-  const handleFileUpload = (e) => {
-    const files = e.target.files;
-    console.log(files);
-  };
-
+const MainContent = () => {
   return (
     <div className="main-content">
-      <div className="main-content_header">
+      <div className="toolbar">
         <button>Create</button>
         <button>Upload or drop</button>
         <button>Create folder</button>
         <button>Edit PDF</button>
       </div>
-      <div className="main-content_body">
+      <div className="file-area">
+        <div className="file-controls">
+          <button>Recents</button>
+          <button>Starred</button>
+        </div>
         <div className="upload-area">
-          <input type="file" id="fileUpload" onChange={handleFileUpload} multiple />
-          <label htmlFor="fileUpload">Drop files here to upload</label>
+          <p>Drop files here to upload</p>
+          <button>Upload</button>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default MainContent;

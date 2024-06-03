@@ -1,47 +1,54 @@
 .main-content {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .main-content_header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .main-content_header button {
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    background-color: #1f9a16;
-    color: white;
-    border-radius: 4px;
-  }
-  
-  .main-content_header button:hover {
-    background-color: #3a82ce;
-  }
-  
-  .main-content_body {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed #ddd;
-    border-radius: 4px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .upload-area input[type="file"] {
-    display: none;
-  }
-  
-  .upload-area label {
-    font-size: 18px;
-    color: #888;
-    cursor: pointer;
-  }
-  
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.toolbar button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0070e0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.file-area {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.file-controls {
+  margin-bottom: 20px;
+}
+
+.file-controls button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-area button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0070e0;
+  color: #fff;
+  cursor: pointer;
+}
