@@ -9,8 +9,8 @@ const Header = () => {
         <button>Invite members</button>
         <button>Notifications</button>
         <button>Settings</button>
-        <button className="profile">UN</button>
       </div>
+      <button className="profile">UN</button>
     </header>
   );
 };
