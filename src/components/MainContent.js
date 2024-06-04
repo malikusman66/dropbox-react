@@ -1,13 +1,13 @@
 import React from 'react';
 import './MainContent.css';
+import CreateDropdown from './CreateDropdown';
 
 const MainContent = () => {
   return (
     <div className="main-content">
       <div className="toolbar">
-        <button>Create</button>
-        <button>Upload or drop</button>
-        <button>Create folder</button>
+        <CreateDropdown />
+        <button>Edit image</button>
         <button>Edit PDF</button>
       </div>
       <div className="file-area">
